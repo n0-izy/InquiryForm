@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #a9a9a9;
+}
+#title{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border: solid #000;
+  border-width: 1px;
+  padding: 30px 0 ;
+}
+#secondTitle{
+  font-size: 30px;
+  font-weight: bold;
+}
+#containerTop{
+  margin: 0 auto;
+  font-size: 25px;
+}
+
+
+th{
+  text-align: end;
+}
+td{
+  margin: 0 10px 0 0; 
+  padding-left:50px;
+}
+
+#inp{
+  height: 50px;
+  width: 350px;
+  border-width: 1px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+#area{
+  height: 200px;
+  width: 500px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+#submit{
+  width: 120px;
+  font-size: 20px;
+}

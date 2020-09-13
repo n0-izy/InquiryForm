@@ -1,22 +1,22 @@
 <?php 
-var_dump($_POST);
   $errors = array();
 
-  if(isset($_POST['btn_submit'])){
+  $name = '';
+  $email = '';
+  $message = '';
+    
+  if(!empty($_POST)){
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
     if($name === ""){
         $errors['name'] = "名前が入力されていません。";
-        var_dump($errors['name']);
     }
     if($email === ""){
         $errors['email'] = "メールアドレスが入力されていません。";
-        var_dump($errors['email']);
     }
     if($message === ""){
         $errors['message'] = "内容が入力されていません。";
-        var_dump($errors['message']);
     }
 }
 
@@ -41,7 +41,7 @@ var_dump($_POST);
 
         <div class="item">
         <?php 
-            if(isset($_POST['name'])){
+            if(isset($errors['name'])){
               echo '<p id="error">';
               echo $errors['name'];
               echo '</p>';
@@ -52,7 +52,7 @@ var_dump($_POST);
 
         <div class="item">
         <?php 
-            if(isset($_POST['email'])){
+            if(isset($errors['email'])){
               echo '<p id="error">';
               echo $errors['email'];
               echo '</p>';
@@ -60,10 +60,9 @@ var_dump($_POST);
             ?>
           <label for="email">メールアドレス:</label> <input id="email" type="text" name="email">
         </div>
-
         <div class="item">
         <?php 
-            if(isset($_POST['message'])){
+            if(isset($errors['message'])){
               echo '<p id="error">';
               echo $errors['message'];
               echo '</p>';
@@ -73,7 +72,7 @@ var_dump($_POST);
         </div>
 
         <div class="btn-area">
-          <input type="submit" name="btn_submit" value="確認する">
+          <input type="submit"  value="確認する">
         </div>
       </form>
   </main>

@@ -1,0 +1,70 @@
+body{
+  margin: 0;
+  padding: 0;
+  color: #a9a9a9
+}
+
+#title{
+  text-align: center;
+  border: solid 1px;
+  margin: 0;
+  padding: 30px
+}
+
+#second_title{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  font-weight: 900;
+}
+
+form{
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+label{
+  width: 25%;
+  display: inline-block;
+  text-align: right;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0 30px 0;
+}
+
+
+input{
+  width:40%;
+  vertical-align: top;
+  height:50px;
+  border-radius: 10px;
+  margin-left: 55px;
+}
+
+textarea{
+  width: 550px;
+  vertical-align: top;
+  border-radius: 10px;
+  margin-left: 55px;
+}
+input[type="submit"]{
+  font-size: 20px;
+  width: 150px;
+  margin-left: 360px;
+  margin-top: 20px;
+  background-color: #87cefa;
+}
+#ph_name,
+#ph_email,
+#ph_textarea{
+  display: inline;
+  margin-left: 60px;
+  font-size: 25px;
+}
+
+#error{
+  color: red;
+  text-align: center;
+  margin: 0;
+}

@@ -1,4 +1,15 @@
+<?php 
 
+  session_start();
+
+  $name    = $_SESSION['name'];
+  $email   = $_SESSION['email'];
+  $message = $_SESSION['message'];
+?>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="stylesheet.css">
@@ -14,13 +25,13 @@
     <div class="container">
       <form method="POST" action="">
         <div class="item">
-          <label id="lab" for="your_name">氏名:</label> <p id="ph_name"><?php echo ($_POST['name']); ?></p>
+          <label id="lab" for="name">氏名:</label> <p id="ph_name"><?php echo $name  ?></p>
         </div>
         <div class="item">
-          <label for="email">メールアドレス:</label> <p id="ph_email" ><?php echo $_POST['email']; ?></p>
+          <label for="email">メールアドレス:</label> <p id="ph_email" ><?php echo $email ?></p>
         </div>
         <div class="item">
-          <label for="message">お問い合わせ内容:</label><p id="ph_textarea" ><?php echo $_POST['message']; ?></p>
+          <label for="message">お問い合わせ内容:</label><p id="ph_textarea" ><?php echo $message ?></p>
         </div>
         
         <div class="btn-area">

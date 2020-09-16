@@ -1,7 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="ja">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="stylesheet.css">
@@ -15,9 +12,9 @@
   <main>
     <p id="second_title">*お問い合わせフォーム*</p>
     <div class="container">
-      <form method="POST" action="Input_confirmation.php">
+      <form method="POST" action="">
         <div class="item">
-          <label id="lab" for="your_name">氏名:</label> <p id="ph_name"><?php echo $_POST['name']; ?></p>
+          <label id="lab" for="your_name">氏名:</label> <p id="ph_name"><?php echo ($_POST['name']); ?></p>
         </div>
         <div class="item">
           <label for="email">メールアドレス:</label> <p id="ph_email" ><?php echo $_POST['email']; ?></p>

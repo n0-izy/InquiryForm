@@ -1,10 +1,9 @@
 <?php 
-  
-  $errors = array();
-  $name = '';
-  $email = '';
+  session_start();
+  $errors  = array();
+  $name    = '';
+  $email   = '';
   $message = '';
-  $pages = 0;
   
   if(!empty($_POST)){
     $name    = $_POST['name'];
@@ -20,6 +19,10 @@
         $errors['message'] = "内容が入力されていません。";
     }
     if(empty($errors)){
+      $_SESSION['name']    = $name;
+      $_SESSION['email']   = $email;
+      $_SESSION['message'] = $message;
+      var_dump($_SESSION);
       header('Location: http://localhost/sample002/Input_confirmation.php');
       exit();
     }
@@ -54,7 +57,7 @@
               echo '</p>';
             }
             ?>
-          <label for="your_name">氏名:</label> <input id="your_name" type="text" name="name">
+          <label for="name">氏名:</label> <input id="name" type="text" name="name">
         </div>
 
         <div class="item">

@@ -67,7 +67,7 @@
               echo $errors['email'];
               echo '</p>';
             }
-            ?>
+            ?>  
           <label for="email">メールアドレス:</label> <input id="email" type="text" name="email">
         </div>
         <div class="item">

@@ -23,13 +23,10 @@
       $_SESSION['email']   = $email;
       $_SESSION['message'] = $message;
       var_dump($_SESSION);
-      header('Location: http://localhost/sample002/Input_confirmation.php');
+      header('Location: ');
       exit();
     }
-    
   }
-      
-
 ?> 
 
 <!DOCTYPE html>
@@ -41,14 +38,13 @@
   <title>お問い合わせ</title>
 </head>
 <body>
+
   <header>
     <h1 id="title">お問い合わせ</h1>
   </header>
   <main>
-
     <p id="second_title">*お問い合わせフォーム*</p>
       <form method="post" action="" >
-
         <div class="item">
         <?php 
             if(isset($errors['name'])){
@@ -59,7 +55,6 @@
             ?>
           <label for="name">氏名:</label> <input id="name" type="text" name="name">
         </div>
-
         <div class="item">
         <?php 
             if(isset($errors['email'])){
@@ -80,11 +75,11 @@
             ?>
           <label for="message">お問い合わせ内容:</label><textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
         </div>
-
         <div class="btn-area">
           <input type="submit"  value="確認する">
         </div>
       </form>
   </main>
+  
 </body>
 </html>

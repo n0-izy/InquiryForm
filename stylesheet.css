@@ -68,3 +68,21 @@ input[type="submit"]{
   text-align: center;
   margin: 0;
 }
+
+.conteiner{
+  text-align: center;
+}
+#send,#back{
+  margin: 0 auto;
+  background-color: #add8e6;
+}
+#back{
+  display: inline-block;
+  height: 50px;
+  font-size: 20px;
+  width: 150px;
+  background-color: #add8e6;
+  text-decoration: none;
+  line-height: 50px;
+  border-radius: 10px;
+}

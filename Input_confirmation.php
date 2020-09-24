@@ -16,14 +16,14 @@
   <title>Document</title>
 </head>
 <body>
+
 <header>
     <h1 id="title">お問い合わせ</h1>
   </header>
-
   <main>
     <p id="second_title">*お問い合わせフォーム*</p>
     <div class="container">
-      <form method="POST" action="">
+      <form method="POST" action="regist.php">
         <div class="item">
           <label id="lab" for="name">氏名:</label> <p id="ph_name"><?php echo $name  ?></p>
         </div>
@@ -33,12 +33,15 @@
         <div class="item">
           <label for="message">お問い合わせ内容:</label><p id="ph_textarea" ><?php echo $message ?></p>
         </div>
-        
         <div class="btn-area">
-          <input type="submit" name="btn_confrm" value="確認する">
+        <div class="conteiner">
+        <a id="back" href="index.php">戻る</a>
+        <input id="send" type="submit" name="btn_confrm" value="送信する">
+        </div>
         </div>
       </form>
     </div>
   </main>
+
 </body>
 </html>

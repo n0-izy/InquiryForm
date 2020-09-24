@@ -1,0 +1,2 @@
+#envファイルないのlocalhostディレクトリにあるファイルをgitの追跡対象から外す
+env/localhost/*

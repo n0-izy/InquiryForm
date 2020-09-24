@@ -1,8 +1,16 @@
-<?php 
+<?php
+  // ここで環境定義ファイルを読み込む
+  // localhostディレクトリ内にデフォルトと異なる環境の定義ファイルが用意されている時
+  if (file_exists('env/localhost/define.php')) {
+    require_once(dirname(__FILE__) . '/env/localhost/define.php');
+  // デフォルトの定義ファイルを読み込む
+  } else {
+    require_once(dirname(__FILE__) . '/env/define_example.php');
+  }
 
   $dsn  ='mysql:dbname=inquiryform;host=localhost';
-  $name = '';
-  $pass = '';
+  $name = PHPMYADMIN_USER;
+  $pass = PHPMYADMIN_PASSWORD;
 
    try{
     $dbh = new PDO($dsn, $name, $pass);
@@ -21,7 +29,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="toppage.css">
+  <link rel="stylesheet" href="./css/toppage.css">
 </head>
 <body>
 

@@ -1,10 +1,7 @@
 <?php 
 
   session_start();
-
-  $name    = $_SESSION['name'];
-  $email   = $_SESSION['email'];
-  $message = $_SESSION['message'];
+  require_once('comfirmController.php');
 ?>
 
 <!DOCTYPE html>

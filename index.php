@@ -1,6 +1,6 @@
 <?php 
   session_start();
-  require_once('inputController.php');
+  require_once(dirname(__FILE__). './controller/inputController.php');
 
 ?> 
 

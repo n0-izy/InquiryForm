@@ -1,7 +1,7 @@
 <?php 
 
   session_start();
-  require_once('comfirmController.php');
+  require_once('controller/comfirmController.php');
 ?>
 
 <!DOCTYPE html>

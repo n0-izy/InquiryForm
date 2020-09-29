@@ -1,6 +1,6 @@
 <?php 
   session_start();
-  require_once('inputController.php');
+  require_once('controller/inputController.php');
 
 ?> 
 

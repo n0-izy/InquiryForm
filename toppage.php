@@ -1,5 +1,5 @@
 <?php
-  require_once(dirname(__FILE__). '/controller/HomeController.php');
+  require_once('HomeController.php');
 ?>
 
 <!DOCTYPE html>

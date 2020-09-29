@@ -1,11 +1,11 @@
 <?php
 // ここで環境定義ファイルを読み込む
   // localhostディレクトリ内にデフォルトと異なる環境の定義ファイルが用意されている時
-  if (file_exists('/env/localhost/define.php')) {
-    require_once(dirname(__FILE__) . './../env/localhost/define.php');
+  if (file_exists('env/localhost/define.php')) {
+    require_once(dirname(__FILE__) . '/env/localhost/define.php');
   // デフォルトの定義ファイルを読み込む
   } else {
-    require_once(dirname(__FILE__) . './../env/define_example.php');
+    require_once(dirname(__FILE__) . '/env/define_example.php');
   }
 
 

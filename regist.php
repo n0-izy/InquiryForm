@@ -1,5 +1,5 @@
 <?php
-  require_once(dirname(__FILE__). '/controller/registController.php');
+  require_once('registController.php');
 ?>
 
 <!DOCTYPE html>

@@ -1,5 +1,5 @@
 <?php
-  require_once('registController.php');
+  require_once('controller/registController.php');
 ?>
 
 <!DOCTYPE html>
